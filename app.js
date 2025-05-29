@@ -89,7 +89,7 @@ function App() {
         });
         currentCount++;
         setTestInsertionsCount(currentCount);
-        await new Promise(resolve => setTimeout(resolve, 10)); 
+        await new Promise(resolve => setTimeout(resolve, 250)); 
       }
       if (stopTestRef.current) {
         console.log(`Test stopped by user after ${currentCount} insertions.`);
@@ -192,7 +192,8 @@ function App() {
         </div>
         <p className="text-xs text-gray-400 mt-4">
           This tool attempts to insert records into a 'test_entries' collection incrementally until an error occurs or it's stopped.
-          It helps to gauge database insertion capacity. Refresh the page to clear the test collection if needed (data is persistent).
+          It helps to gauge database insertion capacity. Each insertion attempt is followed by a 250ms pause.
+          Refresh the page to clear the test collection if needed (data is persistent).
         </p>
       </section>
       
