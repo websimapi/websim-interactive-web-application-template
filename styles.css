@@ -1,0 +1,15 @@
+body {
+  font-family: 'Inter', sans-serif; /* Using a common sans-serif font, Tailwind will provide its own defaults too */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f7fafc; /* A light gray background from Tailwind's palette */
+}
+
+/* Adding a nice Google Font - Inter (optional, but good for aesthetics) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Additional custom styles can go here if Tailwind isn't enough */
+.whitespace-pre-wrap { /* Ensure Tailwind applies this if it's not default for some reason */
+  white-space: pre-wrap;
+}
